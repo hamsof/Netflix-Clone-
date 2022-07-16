@@ -44,7 +44,7 @@ function Banner() {
           {movie?.overview}
         </div>
       </div>
-      <div class="banner--fadeBottom"></div>
+      <div className="banner--fadeBottom"></div>
         {/* read documentation of optional chanining operator in notion */}    
     </header>
   )
