@@ -21,6 +21,7 @@
 
 .movie_container:hover{
     transform: scale(1.15);
+    box-shadow: rgb(0 0 0 / 75%) 0px 3px 10px
 }
 
 .movie_container_large{
