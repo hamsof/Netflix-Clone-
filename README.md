@@ -1,3 +1,3 @@
 ## Netflix Clone
 
-![Netflix](/public/netflix.png)
+![Netflix](/public/netflix.PNG)
