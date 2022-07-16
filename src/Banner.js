@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import axios from './axios'
 import request from "./requests"
+import "./banner.css"
+
+
 
 function Banner() {
 
@@ -22,10 +25,27 @@ function Banner() {
     console.log(movie)
 
   return (
-    <div>
-        {/* read documentation of optional chanining operator in notion */}
-        <h1>{movie?.title || movie?.name || movie?.original_name}</h1>
-    </div>
+    <header>
+      <div className='banner_container'
+      style={{
+        backgroundSize:"cover",
+        backgroundImage:`url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
+        backgroundPosition:"center center"
+      }}
+      >
+        <h1 className='title'>{movie?.title || movie?.name || movie?.original_name}</h1>
+        
+        <div className='banner_buttons'>
+          <button>Play</button>
+          <button>My List</button>
+        </div>
+
+        <div className="description">
+          {movie?.overview}
+        </div>
+      </div>
+        {/* read documentation of optional chanining operator in notion */}    
+    </header>
   )
 }
 
